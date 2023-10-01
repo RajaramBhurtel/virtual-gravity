@@ -1,0 +1,47 @@
+/* Styling for the form container */
+#custom-contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for form labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Styling for form input fields and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Styling for the Submit button */
+input[type="submit"] {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Hover effect for the Submit button */
+input[type="submit"]:hover {
+    background-color: #005bbd;
+}
+
+/* Styling for the Hobbies field */
+#hobbies {
+    /* Add specific styles for the Hobbies field here */
+}
