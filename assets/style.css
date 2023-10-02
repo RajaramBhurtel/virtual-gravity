@@ -44,3 +44,59 @@ input[type="submit"]:hover {
 #result {
     color: green;
 }
+
+/* Style for the food categories */
+.food-categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.food-category {
+    width: calc(33.33% - 20px); /* Adjust the width as needed */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.food-category h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.food-category .food-image {
+    margin: 10px 0;
+    
+} 
+.food-category .food-image img{
+    object-fit: cover;
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+}
+}
+
+.food-category .food-description {
+    font-size: 16px;
+}
+
+.food-category .food-list li {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.food-category .food-list li {
+    margin-bottom: 5px;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .food-categories-container {
+        display: block; /* Change to a single column layout */
+    }
+
+    .food-category {
+        width: 100%; /* Full width for single column */
+    }
+}
+
