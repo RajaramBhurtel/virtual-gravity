@@ -112,10 +112,10 @@ function food_category_shortcode($atts) {
                 $output .= '<div class="food-image">' . $food_image . '</div>';
             }
             if ($food_description) {
-                $output .= '<p class="food-description">' . esc_html($food_description) . '</p>';
+                $output .= '<p class="food-description">' . ($food_description) . '</p>';
             }
             if ($food_list) {
-                $output .= '<ul class="food-list">';
+                $output .= '<ul class="food-list"><b>Food List</b>';
                 $food_items = explode("\n", $food_list);
                 foreach ($food_items as $item) {
                     $output .= '<li>' . esc_html($item) . '</li>';
