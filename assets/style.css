@@ -18,7 +18,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -41,7 +41,6 @@ input[type="submit"]:hover {
     background-color: #005bbd;
 }
 
-/* Styling for the Hobbies field */
-#hobbies {
-    /* Add specific styles for the Hobbies field here */
+#result {
+    color: green;
 }

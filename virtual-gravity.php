@@ -25,7 +25,7 @@ class Virtual_Gravity{
     public function __construct() {
         // add_action( 'plugins_loaded', array( $this, 'on_plugins_loaded' ) );
         add_action( 'plugins_loaded', array( $this, 'virtual_gravity_load' ) );
-		add_action('wp_enqueue_scripts', array( $this, 'load_stylesheets' ));
+		add_action( 'wp_enqueue_scripts', array( $this, 'load_stylesheets' ));
 
     }
 
@@ -78,7 +78,14 @@ class Virtual_Gravity{
 	public function load_stylesheets()
 		{
 		    $dir = plugin_dir_url(__FILE__);
-		    wp_enqueue_style('VGStyle', $dir . '/assets/style.css', array(), '0.1.0', 'all');
+		    wp_enqueue_style( 'VGStyle', $dir . '/assets/style.css', array(), '0.1.0', 'all' );
+
+            wp_enqueue_script( 'VGScript', $dir . '/assets/scripts.js', array( 'jquery' ), '1.0.0', true );
+
+            wp_localize_script( 'VGScript', 'VG', array(
+                'ajaxurl' => admin_url( 'admin-ajax.php' ),
+            )
+        );
 		}
 
 }
